@@ -3,7 +3,7 @@ A large dataset containing images of clothing patterns across six classes: solid
 
 Note that the images in this dataset may be subject to copyright, and so we do not make them publicly available. Instead, we provide URLs to download the original images, along with cropping/scaling information needed to reconstruct the dataset.
 
-Refer to the file clothingDataset.csv to download the dataset images. Each line contains a single image source, with the class name, image URL, original dimensions, crop window, and one or more scales. For each downloaded image, first crop the image using the provided rectangle and then create synthetic variations as follows:
+Refer to the file googleClothingDataset.csv to download the dataset images. Each line contains a single image source, with the class name, image URL, original dimensions, crop window, and one or more scales. For each downloaded image, first crop the image using the provided rectangle and then create synthetic variations as follows:
 * Generate 224x224 pixel images with the cropped original image centered in the frame.
 * Use the values listed to scale the image
 * For each scale, generate 12 variations by rotating the image in 30 degree increments
